@@ -1,4 +1,4 @@
-package LeeetCode2102;
+package topic.leetCode2102;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class SORTracker {
     private int score;
 
     public SORTracker() {
-        list=new ArrayList<>();
+        list = new ArrayList<>();
     }
 
     public SORTracker(String name, int score) {
@@ -22,21 +22,21 @@ public class SORTracker {
 
 
     void add(String name, int score){
-        if (list==null)
+        if (list == null)
             list.add(new SORTracker(name,score));
-        for (int i=0;i<list.size();i++){
-            if (score>list.get(i).getScore()){
-                list.add(i,new SORTracker(name,score));
+        for (int i = 0; i < list.size(); i++){
+            if (score > list.get(i).getScore()){
+                list.add(i, new SORTracker(name,score));
                 return;
             }
-            if (score==list.get(i).getScore()){
+            if (score == list.get(i).getScore()){
                 if (name.compareTo(list.get(i).getName())<0){
-                    list.add(i,new SORTracker(name,score));
+                    list.add(i, new SORTracker(name,score));
                     return;
                 }
             }
         }
-        list.add(new SORTracker(name,score));
+        list.add(new SORTracker(name, score));
     }
 
     String get(){
