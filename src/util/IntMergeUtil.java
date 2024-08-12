@@ -3,7 +3,7 @@ package util;
 /**
  * 合并工具类
  */
-public class IntMergeUitl {
+public class IntMergeUtil {
 
     /**
      * 合并整型数组
