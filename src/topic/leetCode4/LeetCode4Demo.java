@@ -1,6 +1,6 @@
 package topic.leetCode4;
 
-import util.IntMergeUitl;
+import util.IntMergeUtil;
 
 public class LeetCode4Demo {
 
@@ -9,7 +9,7 @@ public class LeetCode4Demo {
         int[] nums1 = {1, 2, 4, 6};
         int[] nums2 = {2, 3, 7, 8};
 
-        int[] merged = IntMergeUitl.mergeIntArray(nums1, nums2);
+        int[] merged = IntMergeUtil.mergeIntArray(nums1, nums2);
         int length = merged.length;
 
         if (length % 2 == 1) {
